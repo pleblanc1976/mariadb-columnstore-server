@@ -12,7 +12,12 @@ MariaDB ColumnStore also requires the matching engine version. This can be found
 Always match the server engine / git branch with the engine git branch.
 
 Currently building has only been certified on CentOS 6 and 7, Ubuntu 16.04, Debain 8, and SUSE 12.. 
+
 Building on other platforms will be certified in a later release.
+
+
+
+
 
 ## Issue tracking
 
@@ -104,6 +109,12 @@ yum install bison ncurses-devel readline-devel perl-devel openssl-devel cmake li
 ```bash
 apt-get install build-essential automake libboost-all-dev bison cmake libncurses5-dev libreadline-dev libperl-dev libssl-dev libxml2-dev libkrb5-dev flex libpam-dev libsnappy-dev
 ```
+
+### For Ubuntu 18
+
+```bash
+apt-get install build-essential automake libboost-all-dev bison cmake libncurses5-dev libreadline-dev libperl-dev libssl-dev libxml2-dev libkrb5-dev flex libpam-dev libsnappy-dev bison 
+```
 ### For Debian 8
 
 ```bash
@@ -124,7 +135,6 @@ These packages need to be install along with the group development packages:
 zypper groupinstall "Development Tools"
 zypper install bison ncurses-devel readline-devel perl-devel openssl-devel cmake libxml2-devel gperf libaio-devel libevent-devel python-devel ruby-devel tree wget pam-devel snappy-devel
 ```
-
 
 ## Building master branch
 
@@ -262,6 +272,13 @@ These packages need to be installed:
 apt-get install expect perl openssl file sudo libdbi-perl libboost-all-dev libreadline-dev rsync libsnappy1v5 net-tools libnuma1
 ```
 
+## For Ubuntu 18
+
+These packages need to be installed:
+
+```bash
+apt-get install expect perl openssl file sudo libdbi-perl libboost-all-dev libreadline-dev rsync libsnappy1v5 net-tools libnuma1
+```
 ## For Debian 8
 
 These packages need to be installed:
